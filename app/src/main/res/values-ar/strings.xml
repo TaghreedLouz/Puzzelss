@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">الألغاز</string>
+    <string name="Puzzles">ألغاز</string>
+    <string name="start" >ابدأ</string>
+    <string name="Logout">خروج</string>
+    <string name="Settings">الاعدادات</string>
+    <string name="FullName">الاسم</string>
+    <string name="Email">البريد الالكتروني</string>
+    <string name="SelectBirthdate">حدد تاريخ ميلادك</string>
+    <string name="Male">ذكر</string>
+    <string name="Female">أنثى</string>
+    <string name="Save">حفظ</string>
+
+
+
+    <string-array name="Country">
+        <item>فلسطين</item>
+        <item>مصر</item>
+        <item>السودان</item>
+        <item>السعودية</item>
+        <item>تونس</item>
+        <item>الصومال</item>
+        <item>الجزائر</item>
+        <item>المغرب</item>
+        <item>العراق</item>
+        <item>سوريا</item>
+        <item>اليمن</item>
+        <item>ليبيا</item>
+        <item>الاردن</item>
+        <item>لبنان</item>
+        <item>الامارات</item>
+        <item>كويت</item>
+        <item>قطر</item>
+    </string-array>
+
+
+
+</resources>

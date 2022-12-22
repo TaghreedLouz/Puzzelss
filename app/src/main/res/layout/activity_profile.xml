@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_profile_background"
+    android:paddingStart="@dimen/_20sdp"
+    android:paddingEnd="@dimen/_20sdp"
+    android:paddingBottom="@dimen/_20sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/FullName"
+            android:padding="@dimen/_2sdp"
+            app:counterEnabled="true"
+            app:counterMaxLength="30">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profileEtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/teal_200"
+                android:textSize="@dimen/_16ssp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayout2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Email"
+            app:layout_constraintTop_toBottomOf="@+id/TextInputLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profileEtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/teal_200"
+                android:textSize="@dimen/_16ssp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayoutb3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:hint="@string/SelectBirthdate"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextInputLayout2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profileEtBirthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:inputType="date"
+                android:textColor="@color/black"
+                android:textColorHint="@color/teal_200"
+                android:textSize="@dimen/_16ssp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/profileRgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutb3">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/profileRbMale"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_weight="1"
+                android:textSize="@dimen/_16ssp"
+                android:duplicateParentState="true"
+                android:fontFamily="casual"
+                android:text="@string/Male"
+                android:textColor="@color/black"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/profileRbFemale"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_weight="1"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="casual"
+                android:text="@string/Female"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/registar_sp_country"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_16ssp"
+            android:entries="@array/Country"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileRgGender"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registar_btn_save"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/background"
+            android:fontFamily="casual"
+            android:text="@string/Save"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registar_sp_country"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
