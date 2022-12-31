@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompleteFragment">
+
+    <LinearLayout
+        android:id="@+id/layComplete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/questionTvComplete"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/question_background"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="كم ارتفاع برج خليفة عن سطح الارض"
+            android:textColor="@color/semiBlack"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layEtAnswer"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutanswer"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/_155sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/EnterTheAnswer"
+                android:textColorHint="@color/teal"
+                android:visibility="visible">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/questionEtAnswerComplete"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:textColor="@color/semiBlack" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/questionBtnCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:text="@string/Check"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

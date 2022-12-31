@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layChoose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/questionTvChoose"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/question_background"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="كم ارتفاع برج خليفة عن سطح الارض"
+                android:textColor="@color/semiBlack"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/questionRG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp">
+
+                <RadioButton
+                    android:id="@+id/questionRB1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="4876m"
+                    android:textColor="@color/teal"
+                    android:textSize="@dimen/_15ssp"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <RadioButton
+                    android:id="@+id/questionRB2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="864m"
+                    android:textColor="@color/teal"
+                    android:textSize="@dimen/_15ssp" />
+
+                <RadioButton
+                    android:id="@+id/questionRB3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="828m"
+                    android:textColor="@color/teal"
+                    android:textSize="@dimen/_15ssp" />
+
+                <RadioButton
+                    android:id="@+id/questionRB4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="625m"
+                    android:textColor="@color/teal"
+                    android:textSize="@dimen/_15ssp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

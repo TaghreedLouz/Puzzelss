@@ -1,0 +1,117 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_140sdp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="@dimen/_10sdp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/startPlayImgLock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_unlock" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/startPlayTvLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="casual"
+                android:text="@string/level"
+                android:textColor="@color/semiBlack"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/startPlayTvNumLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="@string/numValue"
+                android:textColor="@color/teal"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/startPlayTvPointsNeeded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="@string/PointsNeeded"
+                android:textColor="@color/semiBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/startPlayTvNumPointsNeeded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/numValue"
+                android:textColor="@color/teal"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/startPlayTvRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="@string/Rate"
+                android:textColor="@color/semiBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/startPlayTvNumRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/numValue"
+                android:textColor="@color/teal"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

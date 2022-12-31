@@ -7,13 +7,17 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 
+import com.devtaghreed.puzzels.Model.parsJson;
+import com.devtaghreed.puzzels.RoomDataBase.ViewModel;
 import com.devtaghreed.puzzels.databinding.ActivitySplashBinding;
 
 
-public class Splash_Activity extends AppCompatActivity {
+public  class Splash_Activity extends AppCompatActivity {
     ActivitySplashBinding binding;
     Animation animation;
+    static ViewModel viewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +25,17 @@ public class Splash_Activity extends AppCompatActivity {
         binding = ActivitySplashBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        animation = AnimationUtils.loadAnimation(this,R.anim.s3);
-        binding.splashImg.setAnimation(animation);
+        com.devtaghreed.puzzels.Model.parsJson p = new parsJson(getApplicationContext());
 
+        //pars
+        viewModel = new ViewModelProvider(this).get(ViewModel.class);
+        parsJson parsJson = new parsJson(this);
+        parsJson.parsJsonFromAssetsForLevel(com.devtaghreed.puzzels.Model.parsJson.readFromAssets(getApplicationContext()));
+
+
+        //animation & thread
+        animation = AnimationUtils.loadAnimation(this, R.anim.splash);
+        binding.splashImg.setAnimation(animation);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -33,5 +45,4 @@ public class Splash_Activity extends AppCompatActivity {
             }
         }, 2000);
     }
-
 }

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Puzzles</string>
     <string name="Puzzles">Puzzles</string>
-    <string name="start" >Start</string>
+    <string name="start">Start</string>
     <string name="Logout">Logout</string>
     <string name="Settings">Settings</string>
     <string name="FullName">FullName</string>
@@ -14,11 +14,17 @@
     <string name="numValue">0</string>
     <string name="level">Level :</string>
     <string name="score">Score :</string>
-    <string name="puzzle">Puzzle :</string>
+    <string name="puzzle">Puzzles :</string>
     <string name="sounds">Sounds</string>
     <string name="notification">Notification</string>
     <string name="profile">Profile</string>
     <string name="new_play">new Play</string>
+    <string name="True">True</string>
+    <string name="False">False</string>
+    <string name="EnterTheAnswer">Enter The Answer</string>
+    <string name="Check">Check</string>
+    <string name="Edit">Edit</string>
+    <string name="PointsNeeded">Points Needed :</string>
 
     <string-array name="Country">
         <item>Palestine</item>
@@ -39,7 +45,11 @@
         <item>Kuwait</item>
         <item>Qatar</item>
     </string-array>
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Rate">Rate :</string>
+    <string name="Add">Add</string>
+    <string name="false_answer">False answer</string>
+    <string name="true_answer">True answer</string>
 
 </resources>

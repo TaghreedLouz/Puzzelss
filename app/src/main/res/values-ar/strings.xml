@@ -12,6 +12,22 @@
     <string name="Male">ذكر</string>
     <string name="Female">أنثى</string>
     <string name="Save">حفظ</string>
+    <string name="skip">تخطي</string>
+    <string name="numValue">0</string>
+    <string name="level">مرحلة :</string>
+    <string name="score">نقاط :</string>
+    <string name="puzzle">الالغاز :</string>
+    <string name="sounds">أصوات</string>
+    <string name="notification">اشعارات</string>
+    <string name="profile">ملف شخصي</string>
+    <string name="new_play">لعبة جيدة</string>
+    <string name="True">صح</string>
+    <string name="False">خطأ</string>
+    <string name="EnterTheAnswer">أدخل الاجابة</string>
+    <string name="Check">تحقق</string>
+    <string name="Edit">تعديل</string>
+    <string name="PointsNeeded">النقاط المتبقية</string>
+    <string name="Rate">التقييم :</string>
 
 
 

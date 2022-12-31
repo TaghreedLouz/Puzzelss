@@ -2,34 +2,40 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.devtaghreed.puzzels">
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Puzzles">
-
+        <service
+            android:name=".Model.FalseService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
+            android:name=".Model.TrueService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Model.MyService"
+            android:enabled="true"
+            android:exported="true" />
 
         <activity
             android:name=".ProfileActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SettingsActivity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".LevelActivity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".StartPlayingActivity"
-            android:exported="true" >
-
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Splash_Activity"
             android:exported="true">
@@ -43,11 +49,13 @@
             android:name=".HomeActivity"
             android:exported="false" />
 
+        <service
+            android:name=".Model.jobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-
     </application>
 
 </manifest>
